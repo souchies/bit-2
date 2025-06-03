@@ -4,80 +4,186 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio | BIT Institute</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style2.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/bit-22.png" type="image/x-icon" />
 </head>
 <body>
-
+  <!-- Barra de navegación mejorada -->
   <nav class="navbar">
     <div class="container nav-content">
-      <h1 class="logo">BIT Institute</h1>
-      <ul class="nav-links">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="index.html">Estudiantes</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+      <div class="logo-container">
+        <img src="./assets/bit-22.png" alt="BIT Institute Logo" class="logo-img">
+        <h1 class="logo">BIT Institute</h1>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="inicio.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Estudiantes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#" class="btn btn-outline">Iniciar sesión</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
-<section class="carrusel container">
-  <div class="carrusel-slider">
-    <div class="slide activo">
-      <img src="./assets/image.png" alt="Programador trabajando" />
-    </div>
-    
-</section>
 
-  <header class="hero container">
-    <h2>Un curso de programación es todo lo que necesitas para crecer</h2>
-    <p>Adquiere habilidades que las empresas buscan hoy</p>
-    <a href="#" class="btn">Explorar cursos</a>
-  </header>
-
-  <section class="info container">
-    <p>
-      Con nuestros bootcamps y cursos presenciales y online en vivo, te formamos en las habilidades técnicas más demandadas por el mercado laboral.
-    </p>
-  </section>
-
-  <section class="beneficios container">
-    <h2>¿Por qué estudiar en BIT?</h2>
-    <div class="stats">
-      <div class="stat-card">
-        <h3>Estudiantes graduados</h3>
-        <p>+10.500</p>
+  <!-- Hero Section con tu imagen image.png -->
+  <section class="hero">
+    <div class="hero-content container">
+      <div class="hero-text">
+        <h1>Transforma tu carrera con habilidades digitales</h1>
+        <p class="hero-subtitle">Bootcamps intensivos en programación, diseño y datos con mentoría personalizada</p>
+        <a href="#cursos" class="btn btn-primary">Explorar cursos</a>
       </div>
-      <div class="stat-card">
-        <h3>Proyectos ejecutados</h3>
-        <p>+75</p>
-      </div>
-      <div class="stat-card">
-        <h3>Tasa de empleabilidad</h3>
-        <p>70%</p>
-      </div>
-      <div class="stat-card">
-        <h3>Estudiantes mujeres</h3>
-        <p>35%</p>
+      <div class="hero-image">
+        <img src="./assets/image.png" alt="Estudiantes aprendiendo programación" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section class="cursos container">
-    <h2>Bootcamps y Cursos</h2>
-    <ul>
-      <li>Desarrollo Web Full Stack - 300h</li>
-      <li>Diseño UX/UI - 300h</li>
-      <li>Análisis de Datos con ML - 300h</li>
-      <li>Inteligencia Artificial - 300h</li>
-      <li>Frontend con React - 100h</li>
-      <li>Fundamentos de Programación - 100h</li>
-    </ul>
+  <!-- Testimonios con image81.jpg -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+      
+      <div class="testimonial-slider">
+        <div class="testimonial-card active">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">El bootcamp de BIT cambió mi vida profesional completamente. En 6 meses pasé de no saber programar a conseguir mi primer trabajo como desarrollador.</p>
+            <div class="testimonial-author">
+              <img src="./assets/image81.jpg" alt="Estudiante de BIT" class="author-avatar">
+              <div class="author-info">
+                <h4>Carlos Mendoza</h4>
+                <p>Desarrollador Frontend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer class="footer container">
-    <p>© 2025 BIT Institute - Bogotá, Colombia</p>
-    <p>Contacto: admisiones@bitinstitute.online | 302 334 9919</p>
-  </footer>
-   <script src="./js/script.js"></script>
+  <!-- Cursos con image80.avif y image82.jpg -->
+  <section id="cursos" class="courses">
+    <div class="container">
+      <h2 class="section-title">Nuestros Programas</h2>
+      
+      <div class="course-grid">
+        <!-- Curso 1 -->
+        <div class="course-card">
+          <div class="course-image">
+            <img src="./assets/image80.avif" alt="Desarrollo Web Full Stack" loading="lazy">
+          </div>
+          <div class="course-content">
+            <h3>Desarrollo Web Full Stack</h3>
+            <p class="course-description">Aprende a construir aplicaciones web completas con las tecnologías más demandadas.</p>
+            <a href="#" class="btn btn-small">Más información</a>
+          </div>
+        </div>
+        
+        <!-- Curso 2 -->
+        <div class="course-card">
+          <div class="course-image">
+            <img src="./assets/image82.jpg" alt="Ciencia de Datos" loading="lazy">
+          </div>
+          <div class="course-content">
+            <h3>Ciencia de Datos</h3>
+            <p class="course-description">Domina el análisis de datos y machine learning con Python.</p>
+            <a href="#" class="btn btn-small">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Columna 1: Logo y descripción -->
+      <div class="footer-col footer-about">
+        <div class="footer-logo">
+          <img src="./assets/bit-22.png" alt="BIT Institute Logo" width="50">
+          <span>BIT Institute</span>
+        </div>
+        <p class="footer-description">
+          Formando a la próxima generación de profesionales tecnológicos con programas intensivos y prácticos.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="footer-col">
+        <h3 class="footer-title">Enlaces rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="index.html">Estudiantes</a></li>
+          <li><a href="#cursos">Nuestros Cursos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Programas -->
+      <div class="footer-col">
+        <h3 class="footer-title">Programas</h3>
+        <ul class="footer-links">
+          <li><a href="#">Desarrollo Web Full Stack</a></li>
+          <li><a href="#">Diseño UX/UI</a></li>
+          <li><a href="#">Ciencia de Datos</a></li>
+          <li><a href="#">Inteligencia Artificial</a></li>
+          <li><a href="#">Ciberseguridad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto -->
+      <div class="footer-col">
+        <h3 class="footer-title">Contacto</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Calle 123 #45-67, Bogotá, Colombia</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span>+57 302 334 9919</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>info@bitinstitute.com</span>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>Lunes a Viernes: 8:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2023 BIT Institute. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-legal">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
